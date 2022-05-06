@@ -1,0 +1,36 @@
+// Radio
+// const colorsWrap = document.querySelector('.colors-wrap')
+// const radioWrap = document.querySelectorAll('.radio-wrap')
+// const boxWrap = document.querySelector('.box-wrap')
+// let selectedColor = ''
+
+// colorsWrap.addEventListener('click', function(event){
+//     if(event.target.classList.contains('radio-wrap')){
+//         selectedColor = event.target.dataset.color
+//         for(let radio of radioWrap){
+//             radio.classList.remove('radio-wrap_active')
+//         }
+//         event.target.classList.add('radio-wrap_active')
+//     }
+// })
+// boxWrap.addEventListener('click', function(event){
+//     if((event.target.classList.contains('box-item')) && (selectedColor !== '')){
+//         event.target.style.backgroundColor = '#' + selectedColor
+//         event.target.classList.add('box-item_active')
+//     }
+// })
+
+<!-- <div class="colors-wrap">
+    <label class="radio-wrap color-yellow" data-color="FFB800">
+        <input type="radio" class="radio" name="radio">
+    </label>
+    <label class="radio-wrap color-blue" data-color="0066FF">
+        <input type="radio" class="radio" name="radio">
+    </label>
+    <label class="radio-wrap color-red" data-color="FF1F00">
+        <input type="radio" class="radio" name="radio">
+    </label>
+    <label class="radio-wrap color-white" data-color="ffffff">
+        <input type="radio" class="radio" name="radio">
+    </label>
+</div> -->

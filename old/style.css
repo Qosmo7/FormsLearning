@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    width: 1200px;
+    margin: 100px auto 0;
+}
+
+.cube{
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+    background-color: #ccc;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+}
+
+.menu{
+    display: none;
+}
+
+.menu.open{
+    display: block;
+}
+
+.icon-open{
+    display: none;
+}
+/* ! */
+
+.wrapper{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.wrapp{
+    position: relative;
+    width:355px;
+    padding: 0 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 40%;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+    z-index: 1;
+  }
+  
+  .arrow-left{
+    left: 10px;
+  }
+  
+  .arrow-right{
+    right: 10px;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  ul {
+    position: relative;
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    transition: .5s ease-in-out;
+  }
+  
+  ul img {
+    width: 130px;
+    height: 130px;
+    display: block; /* убираем пустое место вокруг картинок */
+  }
+  
+  ul li {
+    display: inline-block; /* убираем пустое место между элементами списка */
+  }
