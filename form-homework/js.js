@@ -10,7 +10,7 @@ function validateForm (id, minL, maxL){
     $fields.addEventListener('input', function(event){
         let isValid = true
         $fields.querySelectorAll('input').forEach(function(el){
-            if((el.value.length < minL) || (el.value.length > maxL)){
+            if(el.value.length < minL || el.value.length > maxL){
                 isValid = false
             }
         })
