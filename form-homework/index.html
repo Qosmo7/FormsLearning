@@ -11,45 +11,48 @@
     <title>Form Homework</title>
 </head>
 <body>
-    <div class="container">
+    <div class="form-wrapper">
         <form id="form-login">
-            <fieldset class="login-wrap">
+            <fieldset>
                 <label>
-                    Логін<span class="required-star">*</span>
-                    <input type="text" placeholder="Введіть логін" required>
+                    Email<span class="required-star">*</span>
+                    <div class="input__wrap">
+                        <input name="email" type="text" placeholder="Введіть email" required>
+                    </div>
                 </label>
                 <label>
                     Пароль<span class="required-star">*</span>
-                    <input type="password" placeholder="Введіть пароль" required>
+                    <div class="input__wrap">
+                        <input name="password" type="password" placeholder="Введіть пароль" required>
+                        <div class="input__password-toggle"></div>
+                    </div>
                 </label>
             </fieldset>
-            <button class="button button-fill" type="submit" disabled>Увійти</button>
+            <button class="button button--fill" type="submit" disabled>Увійти</button>
             <div class="separator">
                 <span>або</span>
             </div>
-            <fieldset>
-                <button class="button button-outline button-google" type="button">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.68 8.18183C15.68 7.61456 15.6291 7.06911 15.5345 6.54547H8V9.64002H12.3055C12.12 10.64 11.5564 11.4873 10.7091 12.0546V14.0618H13.2945C14.8073 12.6691 15.68 10.6182 15.68 8.18183Z" fill="#4285F4"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 16C10.16 16 11.971 15.2837 13.2946 14.0618L10.7091 12.0546C9.99277 12.5346 9.07641 12.8182 8.00004 12.8182C5.91641 12.8182 4.15277 11.4109 3.52368 9.52002H0.850952V11.5927C2.16732 14.2073 4.87277 16 8.00004 16Z" fill="#34A853"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52364 9.52001C3.36364 9.04001 3.27273 8.52729 3.27273 8.00001C3.27273 7.47274 3.36364 6.96001 3.52364 6.48001V4.40729H0.850909C0.309091 5.48729 0 6.70911 0 8.00001C0 9.29092 0.309091 10.5127 0.850909 11.5927L3.52364 9.52001Z" fill="#FBBC05"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 3.18182C9.17459 3.18182 10.2291 3.58545 11.0582 4.37818L13.3528 2.08364C11.9673 0.792727 10.1564 0 8.00004 0C4.87277 0 2.16732 1.79273 0.850952 4.40727L3.52368 6.48C4.15277 4.58909 5.91641 3.18182 8.00004 3.18182Z" fill="#EA4335"/>
-                    </svg>Увійти за допомогою Google
-                </button>
-                <button class="button button-outline button-facebook" type="button">
-                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_120_1409)">
-                        <path d="M16.5 8C16.5 3.58172 12.9183 0 8.5 0C4.08172 0 0.5 3.58172 0.5 8C0.5 11.993 3.42547 15.3027 7.25 15.9028V10.3125H5.21875V8H7.25V6.2375C7.25 4.2325 8.44438 3.125 10.2717 3.125C11.1467 3.125 12.0625 3.28125 12.0625 3.28125V5.25H11.0538C10.06 5.25 9.75 5.86672 9.75 6.5V8H11.9688L11.6141 10.3125H9.75V15.9028C13.5745 15.3027 16.5 11.993 16.5 8Z" fill="#1877F2"/>
-                        <path d="M11.6141 10.3125L11.9688 8H9.75V6.5C9.75 5.86734 10.06 5.25 11.0538 5.25H12.0625V3.28125C12.0625 3.28125 11.147 3.125 10.2717 3.125C8.44438 3.125 7.25 4.2325 7.25 6.2375V8H5.21875V10.3125H7.25V15.9028C8.0783 16.0324 8.9217 16.0324 9.75 15.9028V10.3125H11.6141Z" fill="white"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_120_1409">
-                        <rect width="16" height="16" fill="white" transform="translate(0.5)"/>
-                        </clipPath>
-                        </defs>
-                    </svg>Увійти за допомогою Facebook
-                </button>
-            </fieldset>
+            <a href="/" class="button button--outline button--google">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.68 8.18183C15.68 7.61456 15.6291 7.06911 15.5345 6.54547H8V9.64002H12.3055C12.12 10.64 11.5564 11.4873 10.7091 12.0546V14.0618H13.2945C14.8073 12.6691 15.68 10.6182 15.68 8.18183Z" fill="#4285F4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 16C10.16 16 11.971 15.2837 13.2946 14.0618L10.7091 12.0546C9.99277 12.5346 9.07641 12.8182 8.00004 12.8182C5.91641 12.8182 4.15277 11.4109 3.52368 9.52002H0.850952V11.5927C2.16732 14.2073 4.87277 16 8.00004 16Z" fill="#34A853"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52364 9.52001C3.36364 9.04001 3.27273 8.52729 3.27273 8.00001C3.27273 7.47274 3.36364 6.96001 3.52364 6.48001V4.40729H0.850909C0.309091 5.48729 0 6.70911 0 8.00001C0 9.29092 0.309091 10.5127 0.850909 11.5927L3.52364 9.52001Z" fill="#FBBC05"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 3.18182C9.17459 3.18182 10.2291 3.58545 11.0582 4.37818L13.3528 2.08364C11.9673 0.792727 10.1564 0 8.00004 0C4.87277 0 2.16732 1.79273 0.850952 4.40727L3.52368 6.48C4.15277 4.58909 5.91641 3.18182 8.00004 3.18182Z" fill="#EA4335"/>
+                </svg>Увійти за допомогою Google
+            </a>
+            <a href="/" class="button button--outline button--facebook">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_120_1409)">
+                    <path d="M16.5 8C16.5 3.58172 12.9183 0 8.5 0C4.08172 0 0.5 3.58172 0.5 8C0.5 11.993 3.42547 15.3027 7.25 15.9028V10.3125H5.21875V8H7.25V6.2375C7.25 4.2325 8.44438 3.125 10.2717 3.125C11.1467 3.125 12.0625 3.28125 12.0625 3.28125V5.25H11.0538C10.06 5.25 9.75 5.86672 9.75 6.5V8H11.9688L11.6141 10.3125H9.75V15.9028C13.5745 15.3027 16.5 11.993 16.5 8Z" fill="#1877F2"/>
+                    <path d="M11.6141 10.3125L11.9688 8H9.75V6.5C9.75 5.86734 10.06 5.25 11.0538 5.25H12.0625V3.28125C12.0625 3.28125 11.147 3.125 10.2717 3.125C8.44438 3.125 7.25 4.2325 7.25 6.2375V8H5.21875V10.3125H7.25V15.9028C8.0783 16.0324 8.9217 16.0324 9.75 15.9028V10.3125H11.6141Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_120_1409">
+                    <rect width="16" height="16" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                </svg>Увійти за допомогою Facebook
+            </a>
         </form>
     </div>
     <script src="./assets/js/index.js"></script>
