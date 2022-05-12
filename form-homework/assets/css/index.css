@@ -20,7 +20,6 @@ fieldset{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0 auto;
 }
 
 form{
@@ -54,12 +53,15 @@ input:focus-visible{
 }
 
 .input__password-toggle{
+    display: block;
     width: 16px;
     height: 12px;
+    padding: 0;
     position: absolute;
     top: 15px;
     right: 18px;
-    background: url(/assets/images/eye-icon.png);
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
@@ -68,7 +70,7 @@ label{
     font-weight: 500;
 }
 
-button{
+.button{
     padding: 16px 0;
     margin-bottom: 16px;
     font-size: 14px;
