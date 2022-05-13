@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Register Form Homework</title>
+</head>
+<body class="body">
+    <div class="page-wrapper">
+        <div class="form-wrapper">
+            <form id="register-form" class="form">
+                <fieldset>
+                    <div class="form-fields">
+                        <div class="form-row form-row--one">
+                            <div class="form-col">
+                                <div class="input input--required">
+                                    <label for="username" class="input__label">Повне ім’я</label>
+                                    <div class="input__wrap">
+                                        <input id="username" name="name" type="text" class="input__input" placeholder="Іван Котляревський" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row form-row--one">
+                            <div class="form-col">
+                                <div class="input input--required">
+                                    <label for="email" class="input__label">Електронна пошта</label>
+                                    <div class="input__wrap">
+                                        <input id="email" name="email" type="text" class="input__input" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row form-row--one">
+                            <div class="form-col">
+                                <div class="input input--required">
+                                    <label for="password" class="input__label">Пароль</label>
+                                    <div class="input__wrap">
+                                        <input id="password" name="password" type="password" class="input__input" placeholder="Введіть пароль" required>
+                                        <button class="input__password-toggler" type="button">
+                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 3.93939C8.57865 3.93939 9.13361 4.16926 9.54278 4.57843C9.95195 4.9876 10.1818 5.54256 10.1818 6.12121C10.1818 6.69987 9.95195 7.25482 9.54278 7.66399C9.13361 8.07316 8.57865 8.30303 8 8.30303C7.42135 8.30303 6.86639 8.07316 6.45722 7.66399C6.04805 7.25482 5.81818 6.69987 5.81818 6.12121C5.81818 5.54256 6.04805 4.9876 6.45722 4.57843C6.86639 4.16926 7.42135 3.93939 8 3.93939ZM8 0.666668C11.6364 0.666668 14.7418 2.92849 16 6.12121C14.7418 9.31394 11.6364 11.5758 8 11.5758C4.36364 11.5758 1.25818 9.31394 0 6.12121C1.25818 2.92849 4.36364 0.666668 8 0.666668ZM1.58545 6.12121C2.17328 7.32144 3.08604 8.33267 4.21998 9.03994C5.35393 9.74722 6.66356 10.1222 8 10.1222C9.33644 10.1222 10.6461 9.74722 11.78 9.03994C12.914 8.33267 13.8267 7.32144 14.4145 6.12121C13.8267 4.92099 12.914 3.90976 11.78 3.20248C10.6461 2.49521 9.33644 2.12025 8 2.12025C6.66356 2.12025 5.35393 2.49521 4.21998 3.20248C3.08604 3.90976 2.17328 4.92099 1.58545 6.12121Z" fill="#666666"/>
+                                            </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row form-row--one">
+                            <div class="form-col">
+                                <div class="input input--required">
+                                    <label for="password-repeat" class="input__label">Повторіть пароль</label>
+                                    <div class="input__wrap">
+                                        <input id="password-repeat" name="password-repeat" type="password" class="input__input" placeholder="Введіть пароль" required>
+                                        <button class="input__password-toggler" type="button">
+                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 3.93939C8.57865 3.93939 9.13361 4.16926 9.54278 4.57843C9.95195 4.9876 10.1818 5.54256 10.1818 6.12121C10.1818 6.69987 9.95195 7.25482 9.54278 7.66399C9.13361 8.07316 8.57865 8.30303 8 8.30303C7.42135 8.30303 6.86639 8.07316 6.45722 7.66399C6.04805 7.25482 5.81818 6.69987 5.81818 6.12121C5.81818 5.54256 6.04805 4.9876 6.45722 4.57843C6.86639 4.16926 7.42135 3.93939 8 3.93939ZM8 0.666668C11.6364 0.666668 14.7418 2.92849 16 6.12121C14.7418 9.31394 11.6364 11.5758 8 11.5758C4.36364 11.5758 1.25818 9.31394 0 6.12121C1.25818 2.92849 4.36364 0.666668 8 0.666668ZM1.58545 6.12121C2.17328 7.32144 3.08604 8.33267 4.21998 9.03994C5.35393 9.74722 6.66356 10.1222 8 10.1222C9.33644 10.1222 10.6461 9.74722 11.78 9.03994C12.914 8.33267 13.8267 7.32144 14.4145 6.12121C13.8267 4.92099 12.914 3.90976 11.78 3.20248C10.6461 2.49521 9.33644 2.12025 8 2.12025C6.66356 2.12025 5.35393 2.49521 4.21998 3.20248C3.08604 3.90976 2.17328 4.92099 1.58545 6.12121Z" fill="#666666"/>
+                                            </svg>                                                
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row form-row--one">
+                            <div class="form-col">
+                                <div class="input input--checkbox">
+                                    <label class="checkbox__label">
+                                        Я згоден з політикою конфіденційності
+                                        <input type="checkbox" class="input__checkbox">
+                                        <span class="input__checkbox-checkmark">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.5 1.49998L3.5 7.49998L0.75 4.74998L1.455 4.04498L3.5 6.08498L8.795 0.794983L9.5 1.49998Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form__response"></div>
+                <div class="form__actions">
+                    <button type="submit" class="form__submit button button--fill">Зареєструватися</button>
+                </div>
+            </form>
+            <div class="separator">
+                <span>або</span>
+            </div>
+            <div class="social-wrapper">
+                <a href="/" class="button button--outline button--google">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.68 8.18183C15.68 7.61456 15.6291 7.06911 15.5345 6.54547H8V9.64002H12.3055C12.12 10.64 11.5564 11.4873 10.7091 12.0546V14.0618H13.2945C14.8073 12.6691 15.68 10.6182 15.68 8.18183Z" fill="#4285F4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 16C10.16 16 11.971 15.2837 13.2946 14.0618L10.7091 12.0546C9.99277 12.5346 9.07641 12.8182 8.00004 12.8182C5.91641 12.8182 4.15277 11.4109 3.52368 9.52002H0.850952V11.5927C2.16732 14.2073 4.87277 16 8.00004 16Z" fill="#34A853"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52364 9.52001C3.36364 9.04001 3.27273 8.52729 3.27273 8.00001C3.27273 7.47274 3.36364 6.96001 3.52364 6.48001V4.40729H0.850909C0.309091 5.48729 0 6.70911 0 8.00001C0 9.29092 0.309091 10.5127 0.850909 11.5927L3.52364 9.52001Z" fill="#FBBC05"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 3.18182C9.17459 3.18182 10.2291 3.58545 11.0582 4.37818L13.3528 2.08364C11.9673 0.792727 10.1564 0 8.00004 0C4.87277 0 2.16732 1.79273 0.850952 4.40727L3.52368 6.48C4.15277 4.58909 5.91641 3.18182 8.00004 3.18182Z" fill="#EA4335"></path>
+                    </svg>Увійти за допомогою Google
+                </a>
+                <a href="/" class="button button--outline button--facebook">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                        <g clip-path="url(#clip0_120_1409)">
+                        <path d="M16.5 8C16.5 3.58172 12.9183 0 8.5 0C4.08172 0 0.5 3.58172 0.5 8C0.5 11.993 3.42547 15.3027 7.25 15.9028V10.3125H5.21875V8H7.25V6.2375C7.25 4.2325 8.44438 3.125 10.2717 3.125C11.1467 3.125 12.0625 3.28125 12.0625 3.28125V5.25H11.0538C10.06 5.25 9.75 5.86672 9.75 6.5V8H11.9688L11.6141 10.3125H9.75V15.9028C13.5745 15.3027 16.5 11.993 16.5 8Z" fill="#1877F2"></path>
+                        <path d="M11.6141 10.3125L11.9688 8H9.75V6.5C9.75 5.86734 10.06 5.25 11.0538 5.25H12.0625V3.28125C12.0625 3.28125 11.147 3.125 10.2717 3.125C8.44438 3.125 7.25 4.2325 7.25 6.2375V8H5.21875V10.3125H7.25V15.9028C8.0783 16.0324 8.9217 16.0324 9.75 15.9028V10.3125H11.6141Z" fill="white"></path>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_120_1409">
+                        <rect width="16" height="16" fill="white" transform="translate(0.5)"></rect>
+                        </clipPath>
+                        </defs>
+                    </svg>Увійти за допомогою Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
