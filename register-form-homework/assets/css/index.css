@@ -82,6 +82,10 @@ fieldset{
     z-index: 1;
 }
 
+.input__password-toggler--active svg path{
+    fill: #0066FF;
+}
+
 .checkbox__label {
     display: block;
     position: relative;
