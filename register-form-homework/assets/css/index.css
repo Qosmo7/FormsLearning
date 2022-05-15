@@ -2,10 +2,16 @@
     box-sizing: border-box;
 }
 
-.body{
+body,
+button,
+input,
+input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     background-color: #F1F3F4;;
 }
 
@@ -59,7 +65,6 @@ fieldset{
 
 .input__input::placeholder{
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     color:#999;
 }
 
@@ -69,7 +74,7 @@ fieldset{
     box-shadow: 0px 0px 8px rgba(0, 102, 255, 0.2);
 }
 
-.input__password-toggler{
+.password-toggler{
     width: 16px;
     height: 12px;
     padding: 0;
@@ -82,11 +87,15 @@ fieldset{
     z-index: 1;
 }
 
-.input__password-toggler--active svg path{
+.password-toggler svg, .password-toggler svg path{
+    pointer-events: none;
+}
+
+.password-toggler--active svg path{
     fill: #0066FF;
 }
 
-.checkbox__label {
+.checkbox__label{
     display: block;
     position: relative;
     padding-left: 24px;
@@ -94,13 +103,13 @@ fieldset{
     cursor: pointer;
 }
 
-.checkbox__label input {
+.checkbox__label input{
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-.input__checkbox-checkmark {
+.checkbox__checkmark{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,13 +124,12 @@ fieldset{
     transition: .15s ease-in-out;
 }
 
-.checkbox__label input:checked ~ .input__checkbox-checkmark {
+.checkbox__label input:checked ~ .checkbox__checkmark{
     border-color: #0066FF;
     background-color: #0066FF;
 }
 
 .button{
-    font-family: 'Montserrat', sans-serif;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -144,7 +152,7 @@ fieldset{
     cursor: not-allowed;
 }
 
-.separator {
+.separator{
     display: flex;
     justify-content: center;
     position: relative;
@@ -153,7 +161,7 @@ fieldset{
     border-top: 1px solid #999999;
 }
 
-.separator span {
+.separator span{
     display: block;
     position: relative;
     width: 50px;
@@ -164,7 +172,7 @@ fieldset{
     color: #999999;
 }
 
-a.button {
+a.button{
     display: block;
     padding: 16px 0;
     border-radius: 4px;
@@ -174,17 +182,17 @@ a.button {
     text-decoration: none;
 }
 
-.button--outline {
+.button--outline{
     background-color: transparent;
     border: 2px solid #0066FF;
     color: #0066FF;
 }
 
-.button--google {
+.button--google{
     margin-bottom: 16px;
 }
 
-.button--google svg, .button--facebook svg {
+.button--google svg, .button--facebook svg{
     margin-right: 8px;
     position: relative;
     top: 3px;

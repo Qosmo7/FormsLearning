@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="/assets/css/index.css">
     <title>Register Form Homework</title>
 </head>
-<body class="body">
+<body>
     <div class="page-wrapper">
         <div class="form-wrapper">
             <form id="register-form" class="form">
                 <fieldset>
-                    <div class="form-fields">
+                    <div class="form__fields">
                         <div class="form-row form-row--one">
                             <div class="form-col">
                                 <div class="input input--required">
@@ -26,6 +26,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-row form-row--one">
                             <div class="form-col">
                                 <div class="input input--required">
@@ -36,14 +37,15 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-row form-row--one">
                             <div class="form-col">
                                 <div class="input input--required">
                                     <label for="password" class="input__label">Пароль</label>
                                     <div class="input__wrap">
                                         <input id="password" name="password" type="password" class="input__input" placeholder="Введіть пароль" required>
-                                        <button class="input__password-toggler" type="button">
-                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <button class="password-toggler" type="button">
+                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
                                                 <path d="M8 3.93939C8.57865 3.93939 9.13361 4.16926 9.54278 4.57843C9.95195 4.9876 10.1818 5.54256 10.1818 6.12121C10.1818 6.69987 9.95195 7.25482 9.54278 7.66399C9.13361 8.07316 8.57865 8.30303 8 8.30303C7.42135 8.30303 6.86639 8.07316 6.45722 7.66399C6.04805 7.25482 5.81818 6.69987 5.81818 6.12121C5.81818 5.54256 6.04805 4.9876 6.45722 4.57843C6.86639 4.16926 7.42135 3.93939 8 3.93939ZM8 0.666668C11.6364 0.666668 14.7418 2.92849 16 6.12121C14.7418 9.31394 11.6364 11.5758 8 11.5758C4.36364 11.5758 1.25818 9.31394 0 6.12121C1.25818 2.92849 4.36364 0.666668 8 0.666668ZM1.58545 6.12121C2.17328 7.32144 3.08604 8.33267 4.21998 9.03994C5.35393 9.74722 6.66356 10.1222 8 10.1222C9.33644 10.1222 10.6461 9.74722 11.78 9.03994C12.914 8.33267 13.8267 7.32144 14.4145 6.12121C13.8267 4.92099 12.914 3.90976 11.78 3.20248C10.6461 2.49521 9.33644 2.12025 8 2.12025C6.66356 2.12025 5.35393 2.49521 4.21998 3.20248C3.08604 3.90976 2.17328 4.92099 1.58545 6.12121Z" fill="#666666"/>
                                             </svg>                                                
                                         </button>
@@ -51,14 +53,15 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-row form-row--one">
                             <div class="form-col">
                                 <div class="input input--required">
                                     <label for="password-repeat" class="input__label">Повторіть пароль</label>
                                     <div class="input__wrap">
                                         <input id="password-repeat" name="password-repeat" type="password" class="input__input" placeholder="Введіть пароль" required>
-                                        <button class="input__password-toggler" type="button">
-                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <button class="password-toggler" type="button">
+                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
                                                 <path d="M8 3.93939C8.57865 3.93939 9.13361 4.16926 9.54278 4.57843C9.95195 4.9876 10.1818 5.54256 10.1818 6.12121C10.1818 6.69987 9.95195 7.25482 9.54278 7.66399C9.13361 8.07316 8.57865 8.30303 8 8.30303C7.42135 8.30303 6.86639 8.07316 6.45722 7.66399C6.04805 7.25482 5.81818 6.69987 5.81818 6.12121C5.81818 5.54256 6.04805 4.9876 6.45722 4.57843C6.86639 4.16926 7.42135 3.93939 8 3.93939ZM8 0.666668C11.6364 0.666668 14.7418 2.92849 16 6.12121C14.7418 9.31394 11.6364 11.5758 8 11.5758C4.36364 11.5758 1.25818 9.31394 0 6.12121C1.25818 2.92849 4.36364 0.666668 8 0.666668ZM1.58545 6.12121C2.17328 7.32144 3.08604 8.33267 4.21998 9.03994C5.35393 9.74722 6.66356 10.1222 8 10.1222C9.33644 10.1222 10.6461 9.74722 11.78 9.03994C12.914 8.33267 13.8267 7.32144 14.4145 6.12121C13.8267 4.92099 12.914 3.90976 11.78 3.20248C10.6461 2.49521 9.33644 2.12025 8 2.12025C6.66356 2.12025 5.35393 2.49521 4.21998 3.20248C3.08604 3.90976 2.17328 4.92099 1.58545 6.12121Z" fill="#666666"/>
                                             </svg>                                                
                                         </button>
@@ -66,14 +69,15 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-row form-row--one">
                             <div class="form-col">
-                                <div class="input input--checkbox">
+                                <div class="checkbox__wrap">
                                     <label class="checkbox__label">
                                         Я згоден з політикою конфіденційності
-                                        <input type="checkbox" class="input__checkbox">
-                                        <span class="input__checkbox-checkmark">
-                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <span class="checkbox__checkmark">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                                                 <path d="M9.5 1.49998L3.5 7.49998L0.75 4.74998L1.455 4.04498L3.5 6.08498L8.795 0.794983L9.5 1.49998Z" fill="white"/>
                                             </svg>
                                         </span>
@@ -100,6 +104,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 3.18182C9.17459 3.18182 10.2291 3.58545 11.0582 4.37818L13.3528 2.08364C11.9673 0.792727 10.1564 0 8.00004 0C4.87277 0 2.16732 1.79273 0.850952 4.40727L3.52368 6.48C4.15277 4.58909 5.91641 3.18182 8.00004 3.18182Z" fill="#EA4335"></path>
                     </svg>Увійти за допомогою Google
                 </a>
+                
                 <a href="/" class="button button--outline button--facebook">
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
                         <g clip-path="url(#clip0_120_1409)">
